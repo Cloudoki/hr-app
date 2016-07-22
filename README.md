@@ -1,7 +1,7 @@
 # HRApp - Human resources app
 
 ## Details
-
+App for Human resources management. Consulting companies register and will receive an email everytime there is a new opportunity. They can also login in the app to check them.
 
 ## Features
 - Webpack;
