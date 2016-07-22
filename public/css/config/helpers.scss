@@ -1,0 +1,36 @@
+// helper classes. can use mixins
+
+.pointer {
+	cursor: pointer;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-extra-strong { font-weight: 900; }
+.text-strong { font-weight: 600; }
+.text-normal { opacity: 1; }
+.text-light { opacity: .7; }
+.text-extra-light { opacity: .5; }
+.text-ultra-light { opacity: .3; }
+
+// margins
+.mt-10 {margin-top: 10px;} .mt-20 {margin-top: 20px;} 
+
+.json {
+  font-size: 11px;
+  background-color: #333;
+  color: #ecf0f1;
+  padding: 10px 20px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  margin: 0px 20px;
+}
+
+.loading {
+	i {
+		opacity: .7;
+    margin-right: 3px;
+	}
+}

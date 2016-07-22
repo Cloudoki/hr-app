@@ -1,0 +1,59 @@
+.app-card {
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 25px;
+}
+.app-card.feedback {
+  margin-bottom: -30px;
+}
+.app-card .app-card-header,
+.app-card .app-card-footer,
+.app-card .app-card-body {
+  padding: 13px 19px;
+}
+.app-card .app-card-header {
+  font-family: WhiteLabel, ProximaNovaBold, Helvetica, sans-serif;
+  line-height: 1.4em;
+  color: #4e4e4e;
+  font-size: 17px;
+}
+.app-card .app-card-body {
+  padding: 19px;
+}
+.app-card .app-card-body .title {
+  font-family: WhiteLabel, ProximaNovaBold, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+.app-card.app-table thead th {
+  padding: 15px 5px 0px 5px;
+  font-size: 13px;
+}
+.app-card.app-table thead th span {
+  display: block;
+  font-family: WhiteLabel, ProximaNovaBold, Helvetica, sans-serif;
+  padding-bottom: 1px;
+  border-bottom: 2px solid #bababa;
+}
+.app-card.app-table thead th:first-child {
+  padding-left: 19px;
+}
+.app-card.app-table thead th:last-child {
+  padding-right: 19px;
+}
+.app-card.app-table tbody tr td {
+  font-size: 12px;
+  padding: 11px 5px;
+  line-height: 1em;
+  border-bottom: 1px solid #d8d8d8;
+  opacity: .7;
+}
+.app-card.app-table tbody tr td:first-child {
+  padding-left: 19px;
+}
+.app-card.app-table tbody tr td:last-child {
+  padding-right: 19px;
+}
+.app-card.app-table tbody tr:last-child td {
+  padding-bottom: 20px;
+}

@@ -1,0 +1,20 @@
+<div id="main">
+	<div class="menu">
+		<app-menu></app-menu>
+	</div>
+	<div class="content">
+		<h4>Welcome to the {{componentName}}!</h4>
+		<div class="dashboard">
+			<div class="row">
+				<div class="col-sm-6" *ngFor="let p of panels">
+					<div class="app-card">
+						<div class="app-card-header">{{p.title}}</div>
+						<div class="app-card-body text-light">{{p.body}}</div>
+						<div class="app-card-footer text-ultra-light">{{p.footer}}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+</div>

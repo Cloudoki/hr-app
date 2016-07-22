@@ -1,0 +1,75 @@
+<div id="main">
+	<div class="menu">
+		<app-menu></app-menu>
+	</div>
+	<div class="content">
+		<h4>Welcome to the {{componentName}}!</h4>
+		<div class="users" *ngIf="users.length">
+
+			<div *ngIf="insert" class="app-card">
+				<i class="fa fa-times pointer pull-right" aria-hidden="true" (click)="add()"></i>
+
+				<div class="json">{{diagnostic}}</div>
+				<div class="container-fluid">
+				  <h4>Add User</h4>
+				  <form (ngSubmit)="onSubmit()" #weaponForm="ngForm">
+
+				    <div class="form-group">
+				      <label for="name">Name</label>
+				      <input type="text"  class="form-control" required
+								[(ngModel)]="model.name" name="name" placeholder="user name">
+				    </div>
+
+				    <div class="form-group">
+						  <label for="email">Email</label>
+				      <input type="email"  class="form-control" required
+								[(ngModel)]="model.email" name="email" placeholder="email">
+						</div>
+
+						<div class="form-group">
+						  <label for="location">location</label>
+				      <input type="text"  class="form-control" required
+								[(ngModel)]="model.location" name="location" placeholder="location">
+						</div>
+
+						<div class="form-group">
+						  <label for="phone">phone</label>
+				      <input type="text"  class="form-control"
+								[(ngModel)]="model.phone" name="phone" placeholder="phone">
+						</div>
+
+				    <button type="submit" class="btn btn-primary" [disabled]="!weaponForm.form.valid">Add</button>
+				    <button type="button" class="btn btn-success" (click)="newUser()">New User</button>
+
+				  </form>
+				</div>
+			</div>
+
+			<div class="app-card">
+				<div>
+					<div class="app-card-header">
+						<div>There are <strong>{{users.length}}</strong> users</div>
+						<div *ngIf="!insert"><i class="fa fa-plus pointer" aria-hidden="true" (click)="add()"></i></div>
+					</div>
+					<div class="app-card-body">
+						<div class="loading" *ngIf="!users.length"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i>  Loading..</div>
+						<div class="user row" *ngFor="let u of users" (click)="delete(u)">
+							<div class="user-avatar col-sm-6 col-sm-push-6 text-right">
+								<img src="{{u.image}}">
+							</div>
+							<div class="user-details col-sm-6 col-sm-pull-6">
+								<div class="user-name"><span class="capitalize text-strong">name:</span> <span class="text-light">{{u.name}}</span></div>
+								<div class="user-email"><span class="capitalize text-strong">email:</span> <span class="text-light">{{u.email}}</span></div>
+								<div class="user-location"><span class="capitalize text-strong">location:</span> <span class="text-light">{{u.location}}</span></div>
+								<div class="user-created"><span class="capitalize text-strong">created:</span> <span class="text-light">{{u.created | date: 'dd/MM/yyyy - HH:mm'}}</span></div>
+								<div class="user-ratings"><span class="capitalize text-strong">ratings:</span> <span class="rating text-light"><i *ngFor="let item of [1,2,3,4,5]" class="fa fa-star" aria-hidden="true"></i>{{u.ratings}}</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="app-card-footer text-ultra-light">actions go here</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+</div>

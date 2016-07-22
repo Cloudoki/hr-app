@@ -1,0 +1,14 @@
+@media only screen and (max-width: $breakpoint-tablet) {
+	.user {
+		padding-top: 0 !important;
+
+		.user-avatar {
+			text-align: left;
+	    padding: 30px 15px;
+	  }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-phone-large) {}
+
+@media only screen and (max-width: $breakpoint-phone) {}
