@@ -1,7 +1,8 @@
 # HRApp - Human resources app
 
 ## Details
----
+
+
 ## Features
 - Webpack;
 - Oauth2 authentication flow;
