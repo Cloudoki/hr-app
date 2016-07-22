@@ -1,5 +1,6 @@
-# angular2-webpack
-Angular2 starter with webpack
+# HRApp - Human resources app
+
+App for Human resources management. Consulting companies register and will receive an email everytime there is a new opportunity. They can also login in the app to check them.
 
 ## Features
 - Webpack;
