@@ -1,24 +1,25 @@
 .dashboard {
 	padding: 0px;
-}
 
-.dashboard i {
-	margin-right: 10px;
-}
+	i {
+		margin-right: 10px;	
+	}
 
-.dashboard .row {
-	margin-right: -15px;
-  margin-left: -15px;
-}
+	.row {
+		margin-right: -15px;
+	  margin-left: -15px;
+	}
 
-.dashboard .row > div {
-}
+	.item {
+		padding: 2px 0px;
 
-.dashboard .item {
-	padding: 2px 0px;
-}
+		.category {
+			padding: 2px 10px;
+		  font-size: 12px;
+		}
+	}
 
-.dashboard .item .category {
-	padding: 2px 10px;
-  font-size: 12px;
+	.dashboard-body {
+		font-size: 16px;
+	}
 }

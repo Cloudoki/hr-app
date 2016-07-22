@@ -16,13 +16,16 @@ export class MenuComponent {
   constructor(private router:Router, private _application:Application) {
     
     this.menus = [
+      { name: 'opportunities', target: 'opportunities' },
+      { name: 'contacts', target: 'contacts' },
+      { name: 'faq', target: 'faq' },
       { name: 'users', target: 'users' }
     ];
   }
 
   ngOnInit() {
     // remove hash from router name
-    this.active = this.router.url.replace(/[^A-Z0-9]+/ig, "");
+    this.active = this.router.url.replace(/[^A-Z]+/ig, "");
   }
 
   ngOnDestroy() {}

@@ -1,0 +1,51 @@
+//@import "../../../public/css/config/variables.scss";
+
+.opportunity-details {
+  h2 {
+    font-weight: 100; }
+
+  ul {
+    opacity: 1;
+    li {
+      opacity: 1;
+    }
+  }
+
+  .opportunity-detail {
+    margin-bottom: 50px;
+    font-size: 16px;
+
+    /* &:not(:last-child) {
+      margin-bottom: 50px;
+    } */
+
+    &:not(:first-child) {
+      border-top: 1px solid #f1f1f1;
+      padding-top: 20px;
+    }
+  }
+
+  .app-card-footer {
+    opacity: 1;
+    
+    > div {
+      display: inline-block;
+
+      &:first-child {
+        padding-right: 10px;
+      }
+    }
+
+    i {
+       margin-right: 5px;
+    }
+  }
+}
+
+.footer {
+  button {
+    min-width: 120px;
+    text-transform: uppercase;
+    margin: 0px 3px;
+  }
+}

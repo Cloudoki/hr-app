@@ -1,0 +1,55 @@
+<div id="main">
+  <div class="menu">
+    <app-menu></app-menu>
+  </div>
+  <div class="content">
+    <h4>Welcome to the {{componentName}}!</h4>
+    <div class="opportunity-details" *ngIf="loaded">
+
+      <div class="app-card">
+
+        <!-- header -->
+        <div class="app-card-header">
+          <h2 class="capitalize text-strong">{{opportunity.title}}</h2>
+        </div>
+
+        <!-- body -->
+        <div class="app-card-body">
+
+          <div class="opportunity-detail description">
+            <h4 class="capitalize text-strong">description</h4>
+            <div class="text-normal">{{opportunity.description}}</div>
+          </div>
+          <div class="opportunity-detail requirements">
+            <h4 class="capitalize text-strong">requirements:</h4>
+            <div class="text-normal">{{opportunity.requirements}}</div>
+          </div>
+          <div class="opportunity-detail skills">
+            <h4 class="capitalize text-strong">skills</h4>
+            <div class="text-normal">{{opportunity.skills}}</div>
+          </div>
+          <div class="opportunity-detail perks">
+            <h4 class="capitalize text-strong">perks</h4>
+            <div class="text-normal">{{opportunity.perks}}</div>
+          </div>
+
+        </div>
+
+        <!-- footer -->
+        <div class="app-card-footer">
+          <div>
+            <i class="fa fa-map-marker" aria-hidden="true"></i> <span class="text-light">{{opportunity.location}}</span>  
+          </div>
+          <div>
+            <i class="fa fa-calendar" aria-hidden="true"></i> <span class="text-light">{{opportunity.created | date: 'dd/MM/yyyy - HH:mm'}}</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <button class="btn btn-default" (click)="back()">back</button>
+    <button class="btn btn-default" (click)="reply()">reply</button>
+  </div>
+</div>

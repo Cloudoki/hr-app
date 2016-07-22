@@ -1,0 +1,43 @@
+.opportunities {
+  padding: 0px;
+
+  h3 {
+    padding-bottom: 5px;
+  }
+
+  .opportunity {
+    cursor: pointer;
+    padding: 20px 0px;
+    -webkit-transition: all ease-in-out 200ms;
+    transition: all ease 200ms;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #ececec;
+
+    .opportunity-details {
+      > div {
+        padding-bottom: 10px;
+      }
+
+      i {
+        margin-right: 5px;
+      }
+    }
+
+    &:hover {
+      background-color: #f7f7f7;
+      border-bottom: 1px solid #ccc;
+      padding-left: 10px;
+    }
+
+  }
+
+  .app-card-header {
+    > div {
+      display: inline-block;
+
+      &:first-child {
+        padding-right: 10px;
+      }
+    }
+  }
+}

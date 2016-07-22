@@ -1,1 +1,24 @@
 // add style here
+#user {
+  background: #ffffff;
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+  color: #333;
+  margin-top: 2px;
+  display: none;
+
+  > div {
+    padding: 20px;
+    min-width: 100px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f7f7f7;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #f7f7f7;
+    }
+  }
+}

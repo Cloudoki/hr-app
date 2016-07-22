@@ -31,27 +31,17 @@ ul {
 
 li {
   list-style: none;
-  display: inline-block;
   padding: 10px;
-  cursor: pointer;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease 300ms;
 }
 
-li.active {
-  background-color: $product-secondary;
-
-  a {
-    color: #fff;
-  }
-}
-
-li:not(.active):hover {
-  background-color: #000;
-}
-
 h4 {
   margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $dark-grey;
 }
 
 #main {
@@ -73,8 +63,10 @@ h4 {
       li {
         font-size: 14px;
         text-transform: uppercase;
+        display: inline-block;
         padding: 20px 15px;
         min-height: 60px;
+        cursor: pointer;
 
         a {
           color: #fff;
@@ -83,6 +75,18 @@ h4 {
             color: #fff;
             text-decoration: none;          
           }
+        }
+
+        &.active {
+          background-color: $product-secondary;
+
+          a {
+            color: #fff;
+          }
+        }
+
+        &:not(.active):hover {
+          background-color: #000;         
         }
       }
     }

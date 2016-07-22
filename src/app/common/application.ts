@@ -6,12 +6,14 @@ export class Application {
 	private authentication:boolean = true;
 	private api:string;
 	public session:Session;
+	public userProfile:number;
 
 	constructor() {}
 
 	init(authService:any)
 	{
 		// Load configs
+		this.userProfile = 1;
 		this.api = APP_DATA.apiurl;	
 		this.session = new Session(authService);
 

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "status": "active",
+    "location": "Sesimbra, Portugal",
+    "created": "2016-04-05T09:08:07+00:00",
+    "title": "Senior Full-stack Web Developer #1",
+    "description": "We are looking for a mid to senior level developer who can quickly move into a leadership position. We've just had a big funding round and now we need to overhaul our technology to meet the business's ambitions for the next 5 years. We'll be rebuilding every section and every page of the site using the latest technologies and best practices.",
+    "requirements": "You’re someone who’s smart, organised, motivated and gets things done. You want to work in a startup environment, because you like the idea of doing a bit of everything and taking ownership of what you work on. You have ideas about everything, and you’re not afraid to argue your point (while respecting everyone else’s of course). You’re constantly thinking “how can we do this better?”. You have the experience and aptitude to manage other staff with respect and to help build the team as a whole and within its eventual sub-units.",
+    "skills": "Python, Full stack web development using the MVC pattern or something vaguely similar, You're familiar with Django already or you've used similar enough frameworks you can hit the ground running, SQL, preferably PostgreSQL, AngularJS",
+    "nice_to_have": "It would be awesome if you’d had experience with one or more of Redis, Gunicorn, Nginx, Bootstrap, jQuery, or Ubuntu; or if you’ve worked in the travel, music, or e-commerce industries before. But it’s not a requirement. And if you don’t meet one or two of these requirements, or if some of your experience has just been on personal projects, but you’re someone who can read the manual then jump in both feet and learn by doing, why not drop us a line anyways? We'll want to talk to you.",
+    "perks": "We’re located in central London, just behind the Oxo Building, in June we are moving to Camden (NW1 8LH). The tech team has a partitioned space so we can work in peace away from the rest of the company and their endless phone calls. The company culture is very idea orientated and driven but also very social. It's entirely normal at 6pm on a Friday for half the company to be drinking together in the office and then planning to head out for a night out. Day-to-day we get free tea, coffee, fruit, snacks and beer."
+  },
+  {
+    "id": 2,
+    "status": "active",
+    "location": "Lisboa, Portugal",
+    "created": "2015-02-02T09:18:00+00:00",
+    "title": "Senior Full-stack Web Developer #2",
+    "description": "We are looking for a mid to senior level developer who can quickly move into a leadership position. We've just had a big funding round and now we need to overhaul our technology to meet the business's ambitions for the next 5 years. We'll be rebuilding every section and every page of the site using the latest technologies and best practices.",
+    "requirements": "You’re someone who’s smart, organised, motivated and gets things done. You want to work in a startup environment, because you like the idea of doing a bit of everything and taking ownership of what you work on. You have ideas about everything, and you’re not afraid to argue your point (while respecting everyone else’s of course). You’re constantly thinking “how can we do this better?”. You have the experience and aptitude to manage other staff with respect and to help build the team as a whole and within its eventual sub-units.",
+    "skills": "Python, Full stack web development using the MVC pattern or something vaguely similar, You're familiar with Django already or you've used similar enough frameworks you can hit the ground running, SQL, preferably PostgreSQL, AngularJS",
+    "nice_to_have": "It would be awesome if you’d had experience with one or more of Redis, Gunicorn, Nginx, Bootstrap, jQuery, or Ubuntu; or if you’ve worked in the travel, music, or e-commerce industries before. But it’s not a requirement. And if you don’t meet one or two of these requirements, or if some of your experience has just been on personal projects, but you’re someone who can read the manual then jump in both feet and learn by doing, why not drop us a line anyways? We'll want to talk to you.",
+    "perks": "We’re located in central London, just behind the Oxo Building, in June we are moving to Camden (NW1 8LH). The tech team has a partitioned space so we can work in peace away from the rest of the company and their endless phone calls. The company culture is very idea orientated and driven but also very social. It's entirely normal at 6pm on a Friday for half the company to be drinking together in the office and then planning to head out for a night out. Day-to-day we get free tea, coffee, fruit, snacks and beer."
+  },
+  {
+    "id": 3,
+    "status": "active",
+    "location": "Algarve, Portugal",
+    "created": "2013-12-03T01:48:07+00:00",
+    "title": "Senior Full-stack Web Developer #3",
+    "description": "We are looking for a mid to senior level developer who can quickly move into a leadership position. We've just had a big funding round and now we need to overhaul our technology to meet the business's ambitions for the next 5 years. We'll be rebuilding every section and every page of the site using the latest technologies and best practices.",
+    "requirements": "You’re someone who’s smart, organised, motivated and gets things done. You want to work in a startup environment, because you like the idea of doing a bit of everything and taking ownership of what you work on. You have ideas about everything, and you’re not afraid to argue your point (while respecting everyone else’s of course). You’re constantly thinking “how can we do this better?”. You have the experience and aptitude to manage other staff with respect and to help build the team as a whole and within its eventual sub-units.",
+    "skills": "Python, Full stack web development using the MVC pattern or something vaguely similar, You're familiar with Django already or you've used similar enough frameworks you can hit the ground running, SQL, preferably PostgreSQL, AngularJS",
+    "nice_to_have": "It would be awesome if you’d had experience with one or more of Redis, Gunicorn, Nginx, Bootstrap, jQuery, or Ubuntu; or if you’ve worked in the travel, music, or e-commerce industries before. But it’s not a requirement. And if you don’t meet one or two of these requirements, or if some of your experience has just been on personal projects, but you’re someone who can read the manual then jump in both feet and learn by doing, why not drop us a line anyways? We'll want to talk to you.",
+    "perks": "We’re located in central London, just behind the Oxo Building, in June we are moving to Camden (NW1 8LH). The tech team has a partitioned space so we can work in peace away from the rest of the company and their endless phone calls. The company culture is very idea orientated and driven but also very social. It's entirely normal at 6pm on a Friday for half the company to be drinking together in the office and then planning to head out for a night out. Day-to-day we get free tea, coffee, fruit, snacks and beer."
+  },
+  {
+    "id": 4,
+    "status": "active",
+    "location": "Portalegre, Portugal",
+    "created": "2015-10-09T21:28:07+00:00",
+    "title": "Senior Full-stack Web Developer #4",
+    "description": "We are looking for a mid to senior level developer who can quickly move into a leadership position. We've just had a big funding round and now we need to overhaul our technology to meet the business's ambitions for the next 5 years. We'll be rebuilding every section and every page of the site using the latest technologies and best practices.",
+    "requirements": "You’re someone who’s smart, organised, motivated and gets things done. You want to work in a startup environment, because you like the idea of doing a bit of everything and taking ownership of what you work on. You have ideas about everything, and you’re not afraid to argue your point (while respecting everyone else’s of course). You’re constantly thinking “how can we do this better?”. You have the experience and aptitude to manage other staff with respect and to help build the team as a whole and within its eventual sub-units.",
+    "skills": "Python, Full stack web development using the MVC pattern or something vaguely similar, You're familiar with Django already or you've used similar enough frameworks you can hit the ground running, SQL, preferably PostgreSQL, AngularJS",
+    "nice_to_have": "It would be awesome if you’d had experience with one or more of Redis, Gunicorn, Nginx, Bootstrap, jQuery, or Ubuntu; or if you’ve worked in the travel, music, or e-commerce industries before. But it’s not a requirement. And if you don’t meet one or two of these requirements, or if some of your experience has just been on personal projects, but you’re someone who can read the manual then jump in both feet and learn by doing, why not drop us a line anyways? We'll want to talk to you.",
+    "perks": "We’re located in central London, just behind the Oxo Building, in June we are moving to Camden (NW1 8LH). The tech team has a partitioned space so we can work in peace away from the rest of the company and their endless phone calls. The company culture is very idea orientated and driven but also very social. It's entirely normal at 6pm on a Friday for half the company to be drinking together in the office and then planning to head out for a night out. Day-to-day we get free tea, coffee, fruit, snacks and beer."
+  },
+  {
+    "id": 5,
+    "status": "active",
+    "location": "Porto, Portugal",
+    "created": "2012-11-23T05:18:07+00:00",
+    "title": "Senior Full-stack Web Developer #5",
+    "description": "We are looking for a mid to senior level developer who can quickly move into a leadership position. We've just had a big funding round and now we need to overhaul our technology to meet the business's ambitions for the next 5 years. We'll be rebuilding every section and every page of the site using the latest technologies and best practices.",
+    "requirements": "You’re someone who’s smart, organised, motivated and gets things done. You want to work in a startup environment, because you like the idea of doing a bit of everything and taking ownership of what you work on. You have ideas about everything, and you’re not afraid to argue your point (while respecting everyone else’s of course). You’re constantly thinking “how can we do this better?”. You have the experience and aptitude to manage other staff with respect and to help build the team as a whole and within its eventual sub-units.",
+    "skills": "Python, Full stack web development using the MVC pattern or something vaguely similar, You're familiar with Django already or you've used similar enough frameworks you can hit the ground running, SQL, preferably PostgreSQL, AngularJS",
+    "nice_to_have": "It would be awesome if you’d had experience with one or more of Redis, Gunicorn, Nginx, Bootstrap, jQuery, or Ubuntu; or if you’ve worked in the travel, music, or e-commerce industries before. But it’s not a requirement. And if you don’t meet one or two of these requirements, or if some of your experience has just been on personal projects, but you’re someone who can read the manual then jump in both feet and learn by doing, why not drop us a line anyways? We'll want to talk to you.",
+    "perks": "We’re located in central London, just behind the Oxo Building, in June we are moving to Camden (NW1 8LH). The tech team has a partitioned space so we can work in peace away from the rest of the company and their endless phone calls. The company culture is very idea orientated and driven but also very social. It's entirely normal at 6pm on a Friday for half the company to be drinking together in the office and then planning to head out for a night out. Day-to-day we get free tea, coffee, fruit, snacks and beer."
+  },
+  {
+    "id": 6,
+    "status": "active",
+    "location": "Setúbal, Portugal",
+    "created": "2016-01-23T11:32:07+00:00",
+    "title": "Senior Full-stack Web Developer #6",
+    "description": "We are looking for a mid to senior level developer who can quickly move into a leadership position. We've just had a big funding round and now we need to overhaul our technology to meet the business's ambitions for the next 5 years. We'll be rebuilding every section and every page of the site using the latest technologies and best practices.",
+    "requirements": "You’re someone who’s smart, organised, motivated and gets things done. You want to work in a startup environment, because you like the idea of doing a bit of everything and taking ownership of what you work on. You have ideas about everything, and you’re not afraid to argue your point (while respecting everyone else’s of course). You’re constantly thinking “how can we do this better?”. You have the experience and aptitude to manage other staff with respect and to help build the team as a whole and within its eventual sub-units.",
+    "skills": "Python, Full stack web development using the MVC pattern or something vaguely similar, You're familiar with Django already or you've used similar enough frameworks you can hit the ground running, SQL, preferably PostgreSQL, AngularJS",
+    "nice_to_have": "It would be awesome if you’d had experience with one or more of Redis, Gunicorn, Nginx, Bootstrap, jQuery, or Ubuntu; or if you’ve worked in the travel, music, or e-commerce industries before. But it’s not a requirement. And if you don’t meet one or two of these requirements, or if some of your experience has just been on personal projects, but you’re someone who can read the manual then jump in both feet and learn by doing, why not drop us a line anyways? We'll want to talk to you.",
+    "perks": "We’re located in central London, just behind the Oxo Building, in June we are moving to Camden (NW1 8LH). The tech team has a partitioned space so we can work in peace away from the rest of the company and their endless phone calls. The company culture is very idea orientated and driven but also very social. It's entirely normal at 6pm on a Friday for half the company to be drinking together in the office and then planning to head out for a night out. Day-to-day we get free tea, coffee, fruit, snacks and beer."
+  },
+  {
+    "id": 7,
+    "status": "active",
+    "location": "Lisboa, Portugal",
+    "created": "2015-10-23T22:18:07+00:00",
+    "title": "Senior Full-stack Web Developer #7",
+    "description": "We are looking for a mid to senior level developer who can quickly move into a leadership position. We've just had a big funding round and now we need to overhaul our technology to meet the business's ambitions for the next 5 years. We'll be rebuilding every section and every page of the site using the latest technologies and best practices.",
+    "requirements": "You’re someone who’s smart, organised, motivated and gets things done. You want to work in a startup environment, because you like the idea of doing a bit of everything and taking ownership of what you work on. You have ideas about everything, and you’re not afraid to argue your point (while respecting everyone else’s of course). You’re constantly thinking “how can we do this better?”. You have the experience and aptitude to manage other staff with respect and to help build the team as a whole and within its eventual sub-units.",
+    "skills": "Python, Full stack web development using the MVC pattern or something vaguely similar, You're familiar with Django already or you've used similar enough frameworks you can hit the ground running, SQL, preferably PostgreSQL, AngularJS",
+    "nice_to_have": "It would be awesome if you’d had experience with one or more of Redis, Gunicorn, Nginx, Bootstrap, jQuery, or Ubuntu; or if you’ve worked in the travel, music, or e-commerce industries before. But it’s not a requirement. And if you don’t meet one or two of these requirements, or if some of your experience has just been on personal projects, but you’re someone who can read the manual then jump in both feet and learn by doing, why not drop us a line anyways? We'll want to talk to you.",
+    "perks": "We’re located in central London, just behind the Oxo Building, in June we are moving to Camden (NW1 8LH). The tech team has a partitioned space so we can work in peace away from the rest of the company and their endless phone calls. The company culture is very idea orientated and driven but also very social. It's entirely normal at 6pm on a Friday for half the company to be drinking together in the office and then planning to head out for a night out. Day-to-day we get free tea, coffee, fruit, snacks and beer."
+  },
+  {
+    "id": 8,
+    "status": "active",
+    "location": "Braga, Portugal",
+    "created": "2014-05-13T21:08:07+00:00",
+    "title": "Senior Full-stack Web Developer #8",
+    "description": "We are looking for a mid to senior level developer who can quickly move into a leadership position. We've just had a big funding round and now we need to overhaul our technology to meet the business's ambitions for the next 5 years. We'll be rebuilding every section and every page of the site using the latest technologies and best practices.",
+    "requirements": "You’re someone who’s smart, organised, motivated and gets things done. You want to work in a startup environment, because you like the idea of doing a bit of everything and taking ownership of what you work on. You have ideas about everything, and you’re not afraid to argue your point (while respecting everyone else’s of course). You’re constantly thinking “how can we do this better?”. You have the experience and aptitude to manage other staff with respect and to help build the team as a whole and within its eventual sub-units.",
+    "skills": "Python, Full stack web development using the MVC pattern or something vaguely similar, You're familiar with Django already or you've used similar enough frameworks you can hit the ground running, SQL, preferably PostgreSQL, AngularJS",
+    "nice_to_have": "It would be awesome if you’d had experience with one or more of Redis, Gunicorn, Nginx, Bootstrap, jQuery, or Ubuntu; or if you’ve worked in the travel, music, or e-commerce industries before. But it’s not a requirement. And if you don’t meet one or two of these requirements, or if some of your experience has just been on personal projects, but you’re someone who can read the manual then jump in both feet and learn by doing, why not drop us a line anyways? We'll want to talk to you.",
+    "perks": "We’re located in central London, just behind the Oxo Building, in June we are moving to Camden (NW1 8LH). The tech team has a partitioned space so we can work in peace away from the rest of the company and their endless phone calls. The company culture is very idea orientated and driven but also very social. It's entirely normal at 6pm on a Friday for half the company to be drinking together in the office and then planning to head out for a night out. Day-to-day we get free tea, coffee, fruit, snacks and beer."
+  },
+  {
+    "id": 9,
+    "status": "active",
+    "location": "Beja, Portugal",
+    "created": "2011-07-23T14:58:07+00:00",
+    "title": "Senior Full-stack Web Developer #9",
+    "description": "We are looking for a mid to senior level developer who can quickly move into a leadership position. We've just had a big funding round and now we need to overhaul our technology to meet the business's ambitions for the next 5 years. We'll be rebuilding every section and every page of the site using the latest technologies and best practices.",
+    "requirements": "You’re someone who’s smart, organised, motivated and gets things done. You want to work in a startup environment, because you like the idea of doing a bit of everything and taking ownership of what you work on. You have ideas about everything, and you’re not afraid to argue your point (while respecting everyone else’s of course). You’re constantly thinking “how can we do this better?”. You have the experience and aptitude to manage other staff with respect and to help build the team as a whole and within its eventual sub-units.",
+    "skills": "Python, Full stack web development using the MVC pattern or something vaguely similar, You're familiar with Django already or you've used similar enough frameworks you can hit the ground running, SQL, preferably PostgreSQL, AngularJS",
+    "nice_to_have": "It would be awesome if you’d had experience with one or more of Redis, Gunicorn, Nginx, Bootstrap, jQuery, or Ubuntu; or if you’ve worked in the travel, music, or e-commerce industries before. But it’s not a requirement. And if you don’t meet one or two of these requirements, or if some of your experience has just been on personal projects, but you’re someone who can read the manual then jump in both feet and learn by doing, why not drop us a line anyways? We'll want to talk to you.",
+    "perks": "We’re located in central London, just behind the Oxo Building, in June we are moving to Camden (NW1 8LH). The tech team has a partitioned space so we can work in peace away from the rest of the company and their endless phone calls. The company culture is very idea orientated and driven but also very social. It's entirely normal at 6pm on a Friday for half the company to be drinking together in the office and then planning to head out for a night out. Day-to-day we get free tea, coffee, fruit, snacks and beer."
+  },
+  {
+    "id": 10,
+    "status": "active",
+    "location": "Viseu, Portugal",
+    "created": "2010-11-13T17:23:07+00:00",
+    "title": "Senior Full-stack Web Developer #10",
+    "description": "We are looking for a mid to senior level developer who can quickly move into a leadership position. We've just had a big funding round and now we need to overhaul our technology to meet the business's ambitions for the next 5 years. We'll be rebuilding every section and every page of the site using the latest technologies and best practices.",
+    "requirements": "You’re someone who’s smart, organised, motivated and gets things done. You want to work in a startup environment, because you like the idea of doing a bit of everything and taking ownership of what you work on. You have ideas about everything, and you’re not afraid to argue your point (while respecting everyone else’s of course). You’re constantly thinking “how can we do this better?”. You have the experience and aptitude to manage other staff with respect and to help build the team as a whole and within its eventual sub-units.",
+    "skills": "Python, Full stack web development using the MVC pattern or something vaguely similar, You're familiar with Django already or you've used similar enough frameworks you can hit the ground running, SQL, preferably PostgreSQL, AngularJS",
+    "nice_to_have": "It would be awesome if you’d had experience with one or more of Redis, Gunicorn, Nginx, Bootstrap, jQuery, or Ubuntu; or if you’ve worked in the travel, music, or e-commerce industries before. But it’s not a requirement. And if you don’t meet one or two of these requirements, or if some of your experience has just been on personal projects, but you’re someone who can read the manual then jump in both feet and learn by doing, why not drop us a line anyways? We'll want to talk to you.",
+    "perks": "We’re located in central London, just behind the Oxo Building, in June we are moving to Camden (NW1 8LH). The tech team has a partitioned space so we can work in peace away from the rest of the company and their endless phone calls. The company culture is very idea orientated and driven but also very social. It's entirely normal at 6pm on a Friday for half the company to be drinking together in the office and then planning to head out for a night out. Day-to-day we get free tea, coffee, fruit, snacks and beer."
+  }
+]
