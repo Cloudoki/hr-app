@@ -1,6 +1,6 @@
 # HRApp - Human resources app
 
-App for Human resources management. Consulting companies register and will receive an email everytime there is a new opportunity. They can also login in the app to check them.
+This app is designed to centralize the process of requiring tech savvy resources from external consulting companies and other parties.
 
 ## Features
 - Webpack;
