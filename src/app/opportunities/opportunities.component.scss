@@ -1,3 +1,15 @@
+.dummy-data {
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+}
+
 .opportunities {
   padding: 0px;
 
@@ -14,12 +26,20 @@
     border-bottom: 1px solid #ececec;
 
     .opportunity-details {
+      position: relative;
+
       > div {
         padding-bottom: 10px;
       }
 
       i {
         margin-right: 5px;
+
+        &.delete {
+          position: absolute;
+          right: 10px;
+          top: 0;
+        }
       }
     }
 

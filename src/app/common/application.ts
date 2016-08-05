@@ -4,7 +4,7 @@ import {Session} from './session';
 export class Application {
 	private version:number = 1;
 	private authentication:boolean = true;
-	private api:string;
+	public api:string;
 	public session:Session;
 	public userProfile:number;
 
@@ -13,7 +13,7 @@ export class Application {
 	init(authService:any)
 	{
 		// Load configs
-		this.userProfile = 1;
+		this.userProfile = 1; // (1) - consultancy (2) - CLoudoki
 		this.api = APP_DATA.apiurl;	
 		this.session = new Session(authService);
 

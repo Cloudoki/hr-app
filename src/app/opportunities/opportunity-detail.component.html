@@ -10,27 +10,33 @@
 
         <!-- header -->
         <div class="app-card-header">
-          <h2 class="capitalize text-strong">{{opportunity.title}}</h2>
+          <h2 *ngIf="!editField || editField !== 'title'" class="capitalize text-strong">{{opportunity.title}}</h2>
+          <textarea *ngIf="editField === 'title'" name="" id="title" (blur)="edit(null)" [(ngModel)]="opportunity.title" [(ngModel)]="updated.title" rows="2"></textarea>
+          <div *ngIf="profile==2" class="edit"><i title="edit" (click)="edit('title')" [ngClass]="{active: editField === 'description'}" class="fa fa-pencil-square-o" aria-hidden="true"></i><i title="undo" (click)="undo('title')" class="fa fa-undo" aria-hidden="true"></i></div>
         </div>
 
         <!-- body -->
         <div class="app-card-body">
 
           <div class="opportunity-detail description">
-            <h4 class="capitalize text-strong">description</h4>
-            <div class="text-normal">{{opportunity.description}}</div>
+            <h4 class="capitalize text-strong">description <div *ngIf="profile==2" class="edit"><i title="edit" (click)="edit('description')" [ngClass]="{active: editField === 'description'}" class="fa fa-pencil-square-o" aria-hidden="true"></i><i title="undo" (click)="undo('description')" class="fa fa-undo" aria-hidden="true"></i></div></h4>
+            <div *ngIf="!editField || editField !== 'description'" class="text-normal">{{opportunity.description}}</div>
+            <textarea *ngIf="editField === 'description'" name="" id="description" (blur)="edit(null)" [(ngModel)]="opportunity.description" [(ngModel)]="updated.description" rows="5"></textarea>
           </div>
           <div class="opportunity-detail requirements">
-            <h4 class="capitalize text-strong">requirements:</h4>
-            <div class="text-normal">{{opportunity.requirements}}</div>
+            <h4 class="capitalize text-strong">requirements <div *ngIf="profile==2" class="edit"><i title="edit" (click)="edit('requirements')" [ngClass]="{active: editField === 'requirements'}" class="fa fa-pencil-square-o" aria-hidden="true"></i><i title="undo" (click)="undo('requirements')" class="fa fa-undo" aria-hidden="true"></i></div></h4>
+            <div *ngIf="!editField || editField !== 'requirements'" class="text-normal">{{opportunity.requirements}}</div>
+            <textarea *ngIf="editField === 'requirements'" name="" id="requirements" (blur)="edit(null)" [(ngModel)]="opportunity.requirements" [(ngModel)]="updated.requirements" rows="5"></textarea>
           </div>
           <div class="opportunity-detail skills">
-            <h4 class="capitalize text-strong">skills</h4>
-            <div class="text-normal">{{opportunity.skills}}</div>
+            <h4 class="capitalize text-strong">skills <div *ngIf="profile==2" class="edit"><i title="edit" (click)="edit('skills')" [ngClass]="{active: editField === 'skills'}" class="fa fa-pencil-square-o" aria-hidden="true"></i><i title="undo" (click)="undo('skills')" class="fa fa-undo" aria-hidden="true"></i></div></h4>
+            <div *ngIf="!editField || editField !== 'skills'" class="text-normal">{{opportunity.skills}}</div>
+            <textarea *ngIf="editField === 'skills'" name="" id="skills" (blur)="edit(null)" [(ngModel)]="opportunity.skills" [(ngModel)]="updated.skills" rows="5"></textarea>
           </div>
           <div class="opportunity-detail perks">
-            <h4 class="capitalize text-strong">perks</h4>
-            <div class="text-normal">{{opportunity.perks}}</div>
+            <h4 class="capitalize text-strong">perks <div *ngIf="profile==2" class="edit"><i title="edit" (click)="edit('perks')" [ngClass]="{active: editField === 'perks'}" class="fa fa-pencil-square-o" aria-hidden="true"></i><i title="undo" (click)="undo('perks')" class="fa fa-undo" aria-hidden="true"></i></div></h4>
+            <div *ngIf="!editField || editField !== 'perks'" class="text-normal">{{opportunity.perks}}</div>
+            <textarea *ngIf="editField === 'perks'" name="" id="perks" (blur)="edit(null)" [(ngModel)]="opportunity.perks" [(ngModel)]="updated.perks" rows="5"></textarea>
           </div>
 
         </div>
@@ -50,6 +56,7 @@
   </div>
   <div class="footer">
     <button class="btn btn-default" (click)="back()">back</button>
-    <button class="btn btn-default" (click)="reply()">reply</button>
+    <button *ngIf="profile==1" class="btn btn-default" (click)="reply()">reply</button>
+    <button *ngIf="profile==2" class="btn btn-default" (click)="save()" [disabled]="changed()">save</button>
   </div>
 </div>

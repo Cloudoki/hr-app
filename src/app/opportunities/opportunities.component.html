@@ -1,70 +1,83 @@
 <div id="main">
-	<div class="menu">
-		<app-menu></app-menu>
-	</div>
-	<div class="content">
-		<h4>Welcome to the {{componentName}}!</h4>
-		<div class="opportunities" *ngIf="opportunities.length">
+  <div class="menu">
+    <app-menu></app-menu>
+  </div>
+  <div class="content">
+    <h4>Welcome to the {{componentName}}!</h4>
+    <div class="opportunities">
 
-			<div *ngIf="insert && profile == 2" class="app-card">
-				<i class="fa fa-times pointer pull-right" aria-hidden="true" (click)="add()"></i>
+      <div *ngIf="insert && profile == 2" class="app-card">
+        <i class="fa fa-times pointer pull-right" aria-hidden="true" (click)="add()"></i>
 
-				<div class="json">{{diagnostic}}</div>
-				<div class="container-fluid">
-				  <h4>Add User</h4>
-				  <form (ngSubmit)="onSubmit()" #weaponForm="ngForm">
+        <div class="json">{{diagnostic}}</div>
+        <div class="container-fluid">
+          <h4>Add Opportunity <i class="fa fa-list dummy-data" aria-hidden="true" (click)="dummyData()"></i></h4>
+          <form (ngSubmit)="onSubmit()" #opportunityForm="ngForm">
 
-				    <div class="form-group">
-				      <label for="name">Name</label>
-				      <input type="text"  class="form-control" required
-								[(ngModel)]="model.name" name="name" placeholder="user name">
-				    </div>
+            <div class="form-group">
+              <label for="title">Title</label>
+              <textarea name="title" placeholder="title" [(ngModel)]="model.title" rows="2" class="form-control" required></textarea>
+            </div>
 
-				    <div class="form-group">
-						  <label for="email">Email</label>
-				      <input type="email"  class="form-control" required
-								[(ngModel)]="model.email" name="email" placeholder="email">
-						</div>
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea name="description" placeholder="description" [(ngModel)]="model.description" rows="5" class="form-control" required></textarea>
+            </div>
 
-						<div class="form-group">
-						  <label for="location">location</label>
-				      <input type="text"  class="form-control" required
-								[(ngModel)]="model.location" name="location" placeholder="location">
-						</div>
+            <div class="form-group">
+              <label for="requirements">Requirements</label>
+              <textarea name="requirements" placeholder="requirements" [(ngModel)]="model.requirements" rows="5" class="form-control" required></textarea>
+            </div>
 
-						<div class="form-group">
-						  <label for="phone">phone</label>
-				      <input type="text"  class="form-control"
-								[(ngModel)]="model.phone" name="phone" placeholder="phone">
-						</div>
+            <div class="form-group">
+              <label for="skills">Skills</label>
+              <textarea name="skills" placeholder="skills" [(ngModel)]="model.skills" rows="5" class="form-control" required></textarea>
+            </div>
 
-				    <button type="submit" class="btn btn-primary" [disabled]="!weaponForm.form.valid">Add</button>
-				    <button type="button" class="btn btn-success" (click)="newUser()">New User</button>
+            <div class="form-group">
+              <label for="niceToHave">Nice to have</label>
+              <textarea name="niceToHave" placeholder="Nice to have" [(ngModel)]="model.nice_to_have" rows="5" class="form-control" required></textarea>
+            </div>
 
-				  </form>
-				</div>
-			</div>
+            <div class="form-group">
+              <label for="perks">Perks</label>
+              <textarea name="perks" placeholder="perks" [(ngModel)]="model.perks" rows="5" class="form-control" required></textarea>
+            </div>
 
-			<div class="app-card">
-				<div>
-					<div class="app-card-header">
-						<div>There are <strong>{{opportunities.length}}</strong> opportunities</div>
-						<div *ngIf="!insert && profile == 2"><i class="fa fa-plus pointer" aria-hidden="true" (click)="add()"></i></div>
-					</div>
-					<div class="app-card-body">
-						<div class="loading" *ngIf="!opportunities.length"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i>  Loading..</div>
-						<div class="opportunity" *ngFor="let o of opportunities" (click)="gotoDetail(o)">
-							<div class="opportunity-details">
-								<h3>{{o.title}}</h3>
-								<div class="opportunity-location"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="text-light">{{o.location}}</span></div>
-								<div class="opportunity-created"><i class="fa fa-calendar" aria-hidden="true"></i> <span class="text-light">{{o.created | date: 'dd/MM/yyyy - HH:mm'}}</span></div>
-							</div>
-						</div>
-					</div>
-					<div class="app-card-footer text-ultra-light">actions go here</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer"></div>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input type="text"  class="form-control"
+                [(ngModel)]="model.location" name="location" placeholder="location">
+            </div>
+
+            <button type="submit" class="btn btn-primary" [disabled]="!opportunityForm.form.valid">Add</button>
+            <button type="button" class="btn btn-success" (click)="newOpportunity()">New</button>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <div>
+          <div class="app-card-header">
+            <div>There are <strong>{{opportunities.length}}</strong> opportunities</div>
+            <div *ngIf="!insert && profile == 2"><i class="fa fa-plus pointer" aria-hidden="true" (click)="add()"></i></div>
+          </div>
+          <div class="app-card-body">
+            <div class="loading" *ngIf="!opportunities.length"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i>  Loading..</div>
+            <div class="opportunity" *ngFor="let o of opportunities" (click)="gotoDetail(o)">
+              <div class="opportunity-details">
+                <h3>{{o.title}}</h3>
+                <i class="fa fa-times delete" aria-hidden="true" (click)="delete($event, o)"></i>
+                <div class="opportunity-location"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="text-light">{{o.location}}</span></div>
+                <div class="opportunity-created"><i class="fa fa-calendar" aria-hidden="true"></i> <span class="text-light">{{o.created | date: 'dd/MM/yyyy - HH:mm'}}</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="app-card-footer text-ultra-light">actions go here</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"></div>
 </div>

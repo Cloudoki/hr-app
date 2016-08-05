@@ -1,24 +1,27 @@
 export class Opportunity {
-  private id: number;
+  private status: number;
+  private created_by: number;
 
   constructor(
-    public name?: string,
-    public email?: string,
-    public status?: string,
-    public location?: string,
-    public created?: Date,
-    public phone?: string,
-    public ratings?: number,
-    public image?: string
+    
+    public title?: string,
+    public description?: string,
+    public requirements?: string,
+    public skills?: string,
+    public nice_to_have?: string,
+    public perks?: string,
+    public location?: string
+    //public created?: Date
   ) {
-    this.id = new Date().getTime();
-    this.name = '';
-    this.email = '';
-    this.status = 'inactive';
+    this.status = 1;
+    this.created_by = 1;
+    this.title = '';
+    this.description = '';
+    this.requirements = '';
+    this.skills = '';
+    this.nice_to_have = '';
+    this.perks = '';
     this.location = '';
-    this.created = new Date();
-    this.phone = '';
-    this.ratings = 0;
-  	this.image = 'http://placehold.it/50x50';
+    //this.created = new Date();
   }
 }

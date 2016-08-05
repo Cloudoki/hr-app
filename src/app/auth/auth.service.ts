@@ -14,11 +14,11 @@ export class AuthService {
   login() {
     //return Observable.of(true).delay(1000).do(val => this.isLoggedIn = true);
     this.isLoggedIn = true;
-    this.router.navigate(['']);
+    this.router.navigate(['/dashboard']);
   }
 
   logout() {
     this.isLoggedIn = false;
-    this.router.navigate(['/login']);
+    this.router.navigate(['/home']);
   }
 }

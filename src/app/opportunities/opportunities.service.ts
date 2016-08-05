@@ -1,21 +1,50 @@
-// app/dashboard.service.ts
-
-import {Injectable} from '@angular/core';
-import {Http, Response} from '@angular/http';
-import {Observable} from 'rxjs/Rx';
+import { Injectable } from '@angular/core';
+import { Response } from '@angular/http';
+import { Observable } from 'rxjs/Rx';
+import { HttpClient } from '../common/http.client';
+import { Application } from '../common/application';
+import { Opportunity } from './opportunity';
 
 @Injectable()
 
 export class OpportunitiesService { 
 
-    result: Object;
-    error: Object;
+    private result: Object;
+    private error: Object;
+    private endpoint:string = 'opportunities';
 
-    constructor(private http: Http) {
-    }
+    constructor(
+      private httpClient: HttpClient,
+      private _application:Application
+    ) {}
 
     getData() {
-      return this.http.get('js/dummy/opportunities.json')
+      return this.httpClient.get(this._application.api + this.endpoint)
+        .map(this.extractData)
+        .catch(this.handleError);
+    }
+
+    getDataById(id:string) {
+      return this.httpClient.get(this._application.api + this.endpoint + '/' + id)
+        .map(this.extractData)
+        .catch(this.handleError);
+    }
+
+    addData(data:Opportunity) {
+      return this.httpClient.post(this._application.api + this.endpoint, data)
+        .map(this.extractData)
+        .catch(this.handleError);
+    }
+
+    deleteData(id:string) {
+      console.log(this._application.api + this.endpoint + '/' + id);
+      return this.httpClient.delete(this._application.api + this.endpoint + '/' + id)
+        .map(this.extractData)
+        .catch(this.handleError);
+    }
+
+    updateData(id:string, data:Object) {
+      return this.httpClient.patch(this._application.api + this.endpoint + '/' + id, data)
         .map(this.extractData)
         .catch(this.handleError);
     }
