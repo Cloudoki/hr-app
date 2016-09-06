@@ -9,7 +9,7 @@ module.exports = validate({
   entry: {
     'polyfills': './src/polyfills.ts',
     'vendor': './src/vendor.ts',
-    'app': './src/main.ts'
+    'app': './src/app.module.ts'
   },
 
   resolve: {
