@@ -11,6 +11,8 @@ import { UserProfilePipe } from './user-profile.pipe';
   styles: [require('./menu.component.scss').toString()]
 })
 export class MenuComponent {
+  private logo:string = require('images/logo.png');
+  
   componentName = 'MenuComponent';
   menus: Array<any>;
   active:string = '';

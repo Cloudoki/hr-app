@@ -10,6 +10,7 @@ body {
   position: relative;
   background-position: center;
   width: 100%;
+  height: 100%;
   background-size: cover;
   overflow: hidden;
   color: #fff;
@@ -19,6 +20,54 @@ body {
 
   h2 {
     color: #fff;
+  }
+
+  .header-content {
+    position: relative;
+    text-align: center;
+    padding: 180px 15px 100px;
+    width: 100%;
+
+
+    .logo {
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 200px;
+      background-size: 190px;
+    }
+
+    .showme {
+
+      h1 {
+        font-family: 'BebasNeue';
+        font-size: 50px;
+        letter-spacing: 4px;
+      }
+
+      .margin {
+        .btn-xl {
+            padding: 5px 60px;
+        }
+        .btn-color {
+            color: black;
+            background-color: #f8e71c;
+            border-color: #f8e71c;
+        }
+        .btn-me {
+            font-family: 'BebasNeue';
+            border: none;
+            border-radius: 0px;
+            font-size: 24px;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px auto 0 auto;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+        }
+      }
+    }
   }
 }
 

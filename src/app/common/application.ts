@@ -13,7 +13,7 @@ export class Application {
 	init(authService:any)
 	{
 		// Load configs
-		this.userProfile = 1; // (1) - consultancy (2) - CLoudoki
+		this.userProfile = 2; // (1) - consultancy (2) - CLoudoki
 		this.api = APP_DATA.apiurl;	
 		this.session = new Session(authService);
 
@@ -23,6 +23,11 @@ export class Application {
 		}
 		else 
 			this.begin();
+
+		authService.getUserData().subscribe(
+      (data:any) => { this.userProfile = data.profile; },
+      (err:any) => { let error = err }
+    );
 	}
 
 	// Oauth2 Authentication
@@ -45,6 +50,14 @@ export class Application {
 			
 			this.begin();
 		});
+	}
+
+	isAuthenticated() {
+
+		var token = window.localStorage.getItem('token');
+
+		//Check if there is authentication
+		return (token && token.length > 9);
 	}
 
 	// Callbak function after user authentication

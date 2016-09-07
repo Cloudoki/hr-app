@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import { Router, ROUTER_DIRECTIVES } from '@angular/router';
+import { Application } from '../common/application';
 
 @Component({
     selector: 'app-home',
@@ -10,10 +11,10 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 export class HomeComponent {  
   private componentName:string = 'HomeComponent';
   private logo:string = require('images/logo.png');
-  private logoApp:string = require('images/logoapp.png');
-  private cover:string = require('images/bg01.jpg');
-  private montage:string = require('images/montage.png');
+  private cover:string = require('images/backg.jpg');
 
-  constructor() {
+  constructor(private router:Router, private _application:Application) {
+  	if (_application.isAuthenticated())
+  		this.router.navigate(['/dashboard']);
   }
 }

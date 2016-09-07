@@ -4,7 +4,8 @@ export class Session {
 	public version:number = 1;
 	public authenticationtoken:string = null;
 
-	constructor(private authService:any) {}
+	constructor(private authService:any) {
+	}
 
 	loadEssentialData(callback:Function)
 	{

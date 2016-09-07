@@ -1,6 +1,16 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../../public/font/BebasNeue.eot');
+  src: url('../../public/font/BebasNeue.eot') format('embedded-opentype'),
+       url('../../public/font/BebasNeue.woff2') format('woff2'),
+       url('../../public/font/BebasNeue.woff') format('woff'),
+       url('../../public/font/BebasNeue.ttf') format('truetype'),
+       url('../../public/font/BebasNeue.svg#BebasNeue') format('svg');
+}
+
 main {
   padding: 1em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: BebasNeue, Arial, Helvetica, sans-serif;
   text-align: center;
   margin-top: 50px;
   display: block;

@@ -22,3 +22,16 @@
     }
   }
 }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-brand {
+  padding: 0;
+  
+  > img {
+    height: 100%;
+  }
+}
