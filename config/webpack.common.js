@@ -47,7 +47,8 @@ module.exports = validate({
         test: /\.scss$/,
         exclude: /node_modules/,
         loader: 'style!css!sass-loader'
-      }
+      },
+      { test: /bootstrap\/dist\/js\/umd\//, loader: 'imports?jQuery=jquery' }
     ]
   },
 

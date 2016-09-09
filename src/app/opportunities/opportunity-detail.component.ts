@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Application } from '../common/application';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { OpportunitiesService } from './opportunities.service';
 import { HttpClient } from '../common/http.client';
 import { MenuComponent } from '../menu/menu.component';
@@ -26,6 +26,7 @@ export class OpportunityDetailComponent {
   private original:Object = {};
 
   constructor(
+    private router:Router,
     private route: ActivatedRoute,
     private _service:OpportunitiesService,
     private _application:Application
@@ -65,7 +66,10 @@ export class OpportunityDetailComponent {
   save() {
     console.log(this.updated);
     this._service.updateData(this.opportunity['id'], this.updated).subscribe(
-      (data:any) => { console.log('successfully updated opportunity!'); },
+      (data:any) => {
+        console.log('successfully updated opportunity!');
+        this.router.navigate(['/opportunities']);
+      },
       (err:any) => { this.error = true }
     );
   }

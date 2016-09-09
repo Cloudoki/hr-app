@@ -6,6 +6,7 @@ import { MenuComponent } from '../menu/menu.component';
 import { Opportunity } from './opportunity';
 import { HttpClient } from '../common/http.client';
 import * as _ from 'lodash';
+declare  var $:any;
 
 @Component({
   selector: 'app-opportunities',
@@ -22,17 +23,16 @@ export class OpportunitiesComponent {
   private order:string = 'desc';
   private model:Opportunity;
   private profile:number;
+  private selected:any= {};
 
-  constructor(private router: Router, private _service:OpportunitiesService, private _application:Application) {}
+
+  constructor(private router:Router, private _service:OpportunitiesService, private _application:Application) {}
 
   ngOnInit() {
     this.profile = this._application.userProfile;
     this.newOpportunity();
 
-    this._service.getData().subscribe(
-      (data:any) => { this.opportunities = data; },
-      (err:any) => { this.error = true }
-    );
+    this.getOpportunitites();
   }
 
   ngOnDestroy() {}
@@ -45,15 +45,44 @@ export class OpportunitiesComponent {
     this.insert = !this.insert;
   }
 
+  getOpportunitites() {
+    this.opportunities = [];
+
+    this._service.getData().subscribe(
+      (data:any) => { this.opportunities = data; this.sort(); },
+      (err:any) => { this.error = true }
+    );
+  }
+
   delete(e:Event, obj:Opportunity) {
     e.stopPropagation();
 
-    this._service.deleteData(obj['id']).subscribe(
+    this.selected = obj;
+    console.log(this.selected);
+
+    $('#confirmModal').modal('show');
+
+    // this._service.deleteData(obj['id']).subscribe(
+    //   (data:any) => {
+    //     console.log('successfully delete opportunity!');
+    //     _.remove(this.opportunities, function(n) {
+    //       return n == obj;
+    //     });
+    //   },
+    //   (err:any) => { this.error = true }
+    // );
+  }
+
+  deleteConfirm() {
+
+    $('#confirmModal').modal('hide');
+
+    this._service.deleteData(this.selected['id']).subscribe(
       (data:any) => {
         console.log('successfully delete opportunity!');
-        _.remove(this.opportunities, function(n) {
-          return n == obj;
-        });
+        _.remove(this.opportunities, ((n)=> {
+          return n == this.selected;
+        }));
       },
       (err:any) => { this.error = true }
     );
@@ -62,14 +91,18 @@ export class OpportunitiesComponent {
   onSubmit() {
 
     this._service.addData(this.model).subscribe(
-      (data:any) => { console.log('successfully added new opportunity!'); },
+      (data:any) => {
+        console.log('successfully added new opportunity!');
+        this.add();
+        this.getOpportunitites();
+      },
       (err:any) => { this.error = true }
     );
 
-    this.add();
+    /*this.add();
     this.opportunities.push(this.model);
     this.newOpportunity();
-    this.sort();
+    this.sort();*/
   }
 
   sort() {

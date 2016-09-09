@@ -1,10 +1,13 @@
-<div class="inner">
-	<ul>
-		<li [ngClass]="{active: 'dashboard' == active}">
-			<div [style.background]="logo">wefw</div>
-			<!-- <a routerLink="/dashboard"><img class="logo" src="{{logo}}" alt=""></a> -->
-		</li>
-		<li [ngClass]="{active: m.target == active}" attr.data-target="{{m.target}}" attr.data-index="{{i}}" *ngFor="let m of (menus | userProfile:profile); let i=index"><a routerLink="/{{m.name}}">{{m.name}}</a></li>
-		<li class="pull-right" (click)="logout()"><a><i class="fa fa-user" aria-hidden="true"></i> logout</a></li>
-	</ul>
+<div class="container-fluid inner">
+	<div class="row">
+		<div class="col-xs-2 col-sm-2 col-md-2 text-center">
+			<a routerLink="/dashboard"><img class="logo-nav" src="{{logo}}" alt=""></a>
+		</div>
+		<div class="col-xs-10 col-sm-10 col-md-10">
+			<ul>
+				<li [ngClass]="{active: m.target == active}" attr.data-target="{{m.target}}" attr.data-index="{{i}}" *ngFor="let m of (menus | userProfile:profile); let i=index"><a routerLink="/{{m.name}}">{{m.name}}</a></li>
+				<li class="pull-right" (click)="logout()"><a><i class="fa fa-user" aria-hidden="true"></i> logout</a></li>
+			</ul>
+		</div>
+	</div>
 </div>

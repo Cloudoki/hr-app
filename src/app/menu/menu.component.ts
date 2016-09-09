@@ -25,8 +25,7 @@ export class MenuComponent {
     this.menus = [
       { name: 'opportunities', target: 'opportunities', profile:0 },
       { name: 'contacts', target: 'contacts', profile:0 },
-      { name: 'faq', target: 'faq', profile:0 },
-      { name: 'users', target: 'users', profile:2 }
+      { name: 'faq', target: 'faq', profile:0 }
     ];
   }
 
