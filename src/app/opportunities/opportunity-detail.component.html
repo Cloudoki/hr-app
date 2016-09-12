@@ -46,7 +46,7 @@
             <i class="fa fa-map-marker" aria-hidden="true"></i> <span class="text-light">{{opportunity.location}}</span>  
           </div>
           <div>
-            <i class="fa fa-calendar" aria-hidden="true"></i> <span class="text-light">{{opportunity.created | date: 'dd/MM/yyyy - HH:mm'}}</span>
+            <i class="fa fa-calendar" aria-hidden="true"></i> <span class="text-light">{{opportunity.created_at.date | date: 'dd/MM/yyyy'}}</span>
           </div>
         </div>
 

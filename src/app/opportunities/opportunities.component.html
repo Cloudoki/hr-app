@@ -68,7 +68,7 @@
                 <h3>{{o.title}}</h3>
                 <i *ngIf="profile == 2" class="fa fa-times delete" aria-hidden="true" (click)="delete($event, o)"></i>
                 <div class="opportunity-location"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="text-light">{{o.location}}</span></div>
-                <div class="opportunity-created"><i class="fa fa-calendar" aria-hidden="true"></i> <span class="text-light">{{o.created | date: 'dd/MM/yyyy - HH:mm'}}</span></div>
+                <div class="opportunity-created"><i class="fa fa-calendar" aria-hidden="true"></i> <span class="text-light">{{o.created_at.date | date: 'dd/MM/yyyy'}}</span></div>
               </div>
             </div>
           </div>
