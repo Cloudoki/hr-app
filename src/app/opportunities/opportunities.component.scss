@@ -14,12 +14,17 @@ textarea {
   padding: 0px;
 
   h3 {
+    margin-top: 0;
     padding-bottom: 5px;
+  }
+
+  .opportunities-header {
+    margin-bottom: 20px;
   }
 
   .opportunity {
     cursor: pointer;
-    padding: 20px 0px;
+    padding: 20px 30px;
     -webkit-transition: all ease-in-out 200ms;
     transition: all ease 200ms;
     border-top: 1px solid transparent;
@@ -46,7 +51,7 @@ textarea {
     &:hover {
       background-color: #f7f7f7;
       border-bottom: 1px solid #ccc;
-      padding-left: 10px;
+      padding-left: 20px;
     }
 
   }
