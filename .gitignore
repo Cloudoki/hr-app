@@ -40,3 +40,6 @@ jspm_packages
 # js files and config
 src/*.js
 **/*config.ts
+
+# Rui's local stuff
+hr_app.md
