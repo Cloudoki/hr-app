@@ -10,7 +10,7 @@
     "test": "set NODE_ENV=test && karma start",
     "build": "set NODE_ENV=production && rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
     "clean": "rimraf dist",
-    "static": "http-server dist -p 8090 -o",
+    "static": "http-server dist -a localhost -p 8080 -o",
     "postinstall": "typings install"
   },
   "dependencies": {
