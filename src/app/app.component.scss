@@ -8,9 +8,20 @@
        url('../../public/font/BebasNeue.svg#BebasNeue') format('svg');
 }
 
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../../public/font/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../public/font/Montserrat-Regular.ttf');
+}
+
 main {
   padding: 1em;
-  font-family: BebasNeue, Arial, Helvetica, sans-serif;
+  font-family: Lato, Helvetica, sans-serif;
   text-align: center;
   margin-top: 50px;
   display: block;

@@ -1,9 +1,12 @@
 <div class="container-fluid inner">
 	<div class="row">
-		<div class="col-xs-2 col-sm-2 col-md-2 text-center">
-			<a routerLink="/dashboard"><img class="logo-nav" src="{{logo}}" alt=""></a>
+		<div class="col-xs-3 col-sm-3 col-md-3 text-center logo-header">
+			<a routerLink="/dashboard">
+				<img class="logo-nav" src="http://cloudoki.com/images/cloudokilogo.svg" alt="Cloudoki">
+				<span class="logo-text">Cloudoki</span>
+			</a>
 		</div>
-		<div class="col-xs-10 col-sm-10 col-md-10">
+		<div class="col-xs-9 col-sm-9 col-md-9">
 			<ul>
 				<li [ngClass]="{active: m.target == active}" attr.data-target="{{m.target}}" attr.data-index="{{i}}" *ngFor="let m of (menus | userProfile:profile); let i=index"><a routerLink="/{{m.name}}">{{m.name}}</a></li>
 				<li class="pull-right" (click)="logout()"><a><i class="fa fa-user" aria-hidden="true"></i> logout</a></li>
