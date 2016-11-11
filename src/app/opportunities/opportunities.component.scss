@@ -13,13 +13,18 @@ textarea {
 .opportunities {
   padding: 0px;
 
-  h3 {
+  h4 {
     margin-top: 0;
     padding-bottom: 5px;
   }
 
   .opportunities-header {
     margin-bottom: 20px;
+
+    .opportunities-number {
+      font-weight: 600;
+      text-decoration: underline;
+    }
   }
 
   .opportunity {

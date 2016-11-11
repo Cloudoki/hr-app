@@ -59,7 +59,7 @@
       <div class="">
         <div>
           <div class="opportunities-header">
-            <div>There are <strong>{{opportunities.length}}</strong> opportunities</div>
+            <div>We are looking for <span class="opportunities-number">{{opportunities.length}}</span> awesome people to join our ranks!</div>
             <div *ngIf="!insert && profile == 2"><i class="fa fa-plus pointer" aria-hidden="true" (click)="add()"></i></div>
           </div>
           <div class="row">
@@ -67,7 +67,7 @@
             <div class="col-xs-12 col-sm-12 col-md-6" *ngFor="let o of opportunities" (click)="gotoDetail(o)">
               <div class="opportunity app-card">
                 <div class="opportunity-details">
-                  <h3>{{o.title}}</h3>
+                  <h4>{{o.title}}</h4>
                   <i *ngIf="profile == 2" class="fa fa-times delete" aria-hidden="true" (click)="delete($event, o)"></i>
                   <div class="opportunity-location"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="text-light">{{o.location}}</span></div>
                   <div class="opportunity-created"><i class="fa fa-calendar" aria-hidden="true"></i> <span class="text-light">{{o.created_at.date | date: 'dd/MM/yyyy'}}</span></div>
