@@ -4,7 +4,7 @@
   </div>
   <div class="content">
     <div class="opportunities">
-      <div *ngIf="insert && profile == 2" class="app-card">
+      <div *ngIf="insert && profile == 0" class="app-card">
         <i class="fa fa-times pointer pull-right" aria-hidden="true" (click)="add()"></i>
 
         <!-- <div class="json">{{diagnostic}}</div> -->
@@ -59,7 +59,7 @@
         <div>
           <div class="opportunities-header">
             <div>We are looking for <span class="opportunities-number">{{opportunities.length}}</span> awesome people to join our ranks!</div>
-            <div *ngIf="!insert && profile == 2"><i class="fa fa-plus pointer" aria-hidden="true" (click)="add()"></i></div>
+            <div *ngIf="!insert && profile == 0"><i class="fa fa-plus pointer" aria-hidden="true" (click)="add()"></i></div>
           </div>
           <div class="row">
             <div class="loading" *ngIf="!opportunities.length"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i>  Loading..</div>
@@ -67,7 +67,7 @@
               <div class="opportunity app-card">
                 <div class="opportunity-details">
                   <h4>{{o.title}}</h4>
-                  <i *ngIf="profile == 2" class="fa fa-times delete" aria-hidden="true" (click)="delete($event, o)"></i>
+                  <i *ngIf="profile == 0" class="fa fa-times delete" aria-hidden="true" (click)="delete($event, o)"></i>
                   <div class="opportunity-location"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="text-light">{{o.location}}</span></div>
                   <div class="opportunity-created"><i class="fa fa-calendar" aria-hidden="true"></i> <span class="text-light">{{o.created_at.date | date: 'dd/MM/yyyy - HH:mm:ss'}}</span></div>
                 </div>
