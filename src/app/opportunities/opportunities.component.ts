@@ -116,29 +116,9 @@ export class OpportunitiesComponent {
 
 	dummyData() {
 
-		console.log(OpportunityDummy);
-
-		let text = "some random value ..";
 		_.each(this.model, ((index, key)=> {
-			console.log(key);
 
-			// title
-			// description
-			// requirements
-			// skills
-			// nice_to_have
-			// perks
-			// location
-			// status
-			// created_by
-
-			switch (key) {
-				case 'description':
-					text = 'We are currently looking for a Front-end Developer to join our young and creative team in sunny Lisbon. You will work on Start-up projects with modern front-end frameworks and latest browser technologies but also on awesome web application with rich UIs for banking & luxury companies, most of them based in western and central Europe. We offer a creative and diverse environment with a focus on learning and development of new skills among our team members. We have flexible working hours and a gross salary between € 20.000 – 35.000 per year depending on your experience.';
-					break;
-			}
-
-			this.model[key] = (key == 'created_by' || key == 'status') ? 1 : text;
+			this.model[key] = (key == 'created_by' || key == 'status') ? 1 : OpportunityDummy[key];
 		}));
 
 		console.log(this.model);
