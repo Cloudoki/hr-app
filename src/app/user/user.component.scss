@@ -1,0 +1,47 @@
+.users {
+	padding: 0px;
+
+	.user {
+      padding-top: 20px;
+      padding-bottom: 10px;
+
+    &:not(:last-child) {
+    	border-bottom: 1px solid #ececec;
+    }
+    .user-details {
+    	> div {
+    		padding-bottom: 10px;
+    	}
+
+      .user-ratings {
+        .rating {
+          i {
+            color: #ffa500;
+
+            &:last-child {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .user-avatar {
+
+    	img {
+    		border-radius: 50%;
+    	}
+    }
+
+	}
+
+  .app-card-header {
+    > div {
+      display: inline-block;
+
+      &:first-child {
+        padding-right: 10px;
+      }
+    }
+  }
+}

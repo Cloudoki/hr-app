@@ -24,10 +24,10 @@ export class Application {
 		else 
 			this.begin();
 
-		authService.getUserData().subscribe(
-      (data:any) => { this.userProfile = data.profile; },
-      (err:any) => { let error = err }
-    );
+		// authService.getUserData().subscribe(
+		// 	(data:any) => { this.userProfile = data.profile; },
+		//   	(err:any) => { let error = err }
+		// );
 	}
 
 	// Oauth2 Authentication
@@ -46,9 +46,9 @@ export class Application {
 	// Get User data after authentication;
 	loadUserData() {
 
-		this.session.loadEssentialData (()=> {
-			
-			this.begin();
+		this.session.loadEssentialData ((data:any)=> {
+			console.log(data);
+			// this.begin();
 		});
 	}
 

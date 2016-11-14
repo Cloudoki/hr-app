@@ -25,7 +25,7 @@ export class AuthService {
   }
 
   login() {
-    //return Observable.of(true).delay(1000).do(val => this.isLoggedIn = true);
+    // return Observable.of(true).delay(1000).do(val => this.isLoggedIn = true);
     this.isLoggedIn = true;
     this.router.navigate(['/dashboard']);
   }

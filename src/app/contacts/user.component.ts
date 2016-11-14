@@ -1,28 +1,28 @@
 import { Component } from '@angular/core';
-import { UsersService } from './users.service';
+import { UserService } from './user.service';
 import { MenuComponent } from '../menu/menu.component';
 import { User } from './user';
 import * as _ from 'lodash';
 
 @Component({
-  selector: 'app-users',
-  providers: [UsersService],
+  selector: 'app-user',
+  providers: [UserService],
   directives: [MenuComponent],
-  templateUrl: './users.component.html',
-  styles: [require('./users.component.scss').toString()]
+  templateUrl: './user.component.html',
+  styles: [require('./user.component.scss').toString()]
 })
-export class UsersComponent {  
-  private componentName:string = 'UsersComponent';
-  private users:any = [];
+export class UserComponent {  
+  private componentName:string = 'UserComponent';
+  private user:any;
   private error:boolean = false;
   private insert:boolean = false;
   private order:string = 'desc';
   private model:User;
 
-  constructor(_service:UsersService) {
+  constructor(_service:UserService) {
     
     _service.getData().subscribe(
-      data => { this.users = data; },
+      data => { this.user = data; },
       err => { this.error = true }
     );
 
@@ -43,14 +43,7 @@ export class UsersComponent {
 
   onSubmit() {
     this.add();
-    this.users.push(this.model);
     this.newUser();
-    this.sort();
-    console.log(this.users);
-  }
-
-  sort() {
-    this.users = _.orderBy(this.users, 'id', this.order);
   }
 
   // TODO: Remove this when we're done

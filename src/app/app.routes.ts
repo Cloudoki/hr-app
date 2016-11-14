@@ -2,7 +2,7 @@ import { provideRouter, RouterConfig } from '@angular/router';
 import { LoginRoutes, AUTH_PROVIDERS } from './auth/login/login.routes';
 import { DashboardRoutes } from './dashboard/dashboard.routes';
 import { OpportunitiesRoutes } from './opportunities/opportunities.routes';
-import { UsersRoutes } from './users/users.routes';
+import { UserRoutes } from './user/user.routes';
 import { HomeComponent } from './home/home.component';
 
 export const routes: RouterConfig = [
@@ -11,7 +11,7 @@ export const routes: RouterConfig = [
   ...DashboardRoutes,
   ...OpportunitiesRoutes,
   ...LoginRoutes,
-  ...UsersRoutes
+  ...UserRoutes
 ];
 
 export const APP_ROUTER_PROVIDERS = [

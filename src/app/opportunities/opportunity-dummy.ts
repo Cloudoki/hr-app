@@ -5,5 +5,5 @@ export const OpportunityDummy = {
 	skills: 'Excellent knowledge of HTML5, CSS and JavaScript for modern websites\r\nKnowledge of front-end development with JavaScript frameworks like jQuery, Angular, React, etc.\r\nExperience with scaling web application front-ends and solving performance issues (at least 3 years)\r\nFront-end development for single-page applications and with REST-APIs\r\nExcellent knowledge of English and the ability to work on project requirements and documentation\r\nAn existing portfolio of publically available projects and/or code repositories',
 	nice_to_have: 'Experience with test-driven deployment and writing unit and integration tests in JavaScript\r\nExperience with back-end technologies (especially PHP and Wordpress) is a plus\r\nExperience with agile project management processes and continuous delivery\r\nKnowledge of French, German or Portuguese',
 	perks: 'Flexible working hours\r\nSpend part of your work to learn about new technologies and build expertise\r\nWork in small teams with influence and freedom to solve problem creatively',
-	location: 'Lisbon, Cais do Sodré'
+	location: 'Lisbon, Cais do Sodré§<'
 }

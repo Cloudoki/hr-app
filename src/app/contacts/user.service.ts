@@ -6,7 +6,7 @@ import {Observable} from 'rxjs/Rx';
 
 @Injectable()
 
-export class UsersService { 
+export class UserService { 
 
     result: Object;
     error: Object;
@@ -15,7 +15,7 @@ export class UsersService {
     }
 
     getData() {
-      return this.http.get('js/dummy/users.json')
+      return this.http.get('js/dummy/user.json')
         .map(this.extractData)
         .catch(this.handleError);
     }
